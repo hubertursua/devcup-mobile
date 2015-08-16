@@ -1,0 +1,47 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="Check-In" class="bg-light-gray">
+  <ion-content>
+    <div class="location-hero" style="background-image: url('{{location.photo}}')">
+      <div class="gradient">
+        <h3>{{location.name}}</h3>
+      </div>
+    </div>
+    <div class="btn-checkin-wrapper">
+      <button class="button button-assertive" ng-click="checkIn(location);">Check-In and Donate</button>
+    </div>
+    <div class="padding">
+      <div class="item item-image padding" style="text-align: left" ng-click="openMap(location);">
+        <div class="row">
+          <div class="col item-text-wrap">
+            <small>{{location.address}}<br>
+            {{location.city}}</small>
+          </div>
+          <div class="col col-25" style="text-align: right">
+            <span class="ion-ios-navigate-outline" style="font-size: 36px;"></span>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="item item-image padding" style="text-align: left">
+        <div class="row">
+          <div class="col item-text-wrap">
+            <div style="line-height: 36px;">(02) 788-8888</div>
+          </div>
+          <div class="col col-25" style="text-align: right">
+            <span class="ion-ios-telephone-outline" style="font-size: 36px;"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
+<div class="bar bar-footer bar-translucent">
+  <div class="title">
+    <a href="#/register" style="text-decoration: none;">I don't have an account yet</a>
+  </div>
+</div>

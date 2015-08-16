@@ -1,0 +1,17 @@
+<ion-view view-title="People You Helped" class="bg-light-gray">
+  <ion-content class="padding">
+    <ion-list ng-show="donations.length > 0">
+      <div class="card" ng-repeat="donation in donations">
+        <div class="item item-image item-text-wrap">
+            <img ng-src="{{donation.selfie_url}}">
+        </div>
+        <p class="padding" style="text-align: right; color: #bebebe; padding-bottom: 0;"><em><small><span am-time-ago="donation.claim_date"></span></small></em></p>
+      </div>
+    </ion-list>
+    <div class="card" ng-show="donations.length == 0">
+       <div class="item item-text-wrap">
+            <p>We're still waiting for someone to claim your donation.</p>
+        </div>
+    </div>
+  </ion-content>
+</ion-view>

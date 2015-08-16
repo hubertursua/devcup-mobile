@@ -1,0 +1,11 @@
+<ion-view view-title="Explore">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right location" ng-repeat="location in locations" type="item-text-wrap" href="#/tab/explore/{{location._id}}" style="background-image: url({{location.photo}})">
+        <h2>{{location.name}}</h2>
+        <p>{{location.address}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

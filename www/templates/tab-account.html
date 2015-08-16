@@ -1,0 +1,20 @@
+<ion-view view-title="Account">
+  <ion-content>
+    <div class="account-hero">
+        <div class="gradient">
+            <h3>{{user.firstname}} {{user.lastname}}</h3>
+            <p><strong>{{user.username}}</strong></p>
+        </div>
+    </div>
+    <div class="list">
+        <div class="item item-divider">Profile</div>
+        <a class="item" href="#">Edit Profile</a>
+        <a class="item" href="#">Change Password</a>
+        <a class="item" href="#" ng-click="logout();">Sign Out</a>
+
+        <div class="item item-divider">Support</div>
+        <a class="item" href="#">Terms and Conditions</a>
+        <a class="item" href="#">Privacy Policy</a>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,40 @@
+<ion-view view-title="Register" hide-nav-bar="true" class="entry">
+  <ion-content class="ion-content padding">
+    <div class="logo logo-small">
+      <img src="img/logo.png">
+    </div>
+    <p><strong>Please fill up the following info</strong></p>
+    <br>
+    <div class="list">
+      <label class="item item-input">
+        <i class="icon ion-ios-email-outline placeholder-icon"></i>
+        <input type="text" placeholder="Email address" ng-model="username">
+      </label>
+      <label class="item item-input">
+        <i class="icon ion-ios-locked-outline placeholder-icon"></i>
+        <input type="password" placeholder="Password" ng-model="password">
+      </label>
+    </div>
+    <div class="list">
+      <label class="item item-input">
+        <i class="icon ion-person placeholder-icon"></i>
+        <input type="text" placeholder="First Name" ng-model="firstname">
+      </label>
+      <label class="item item-input">
+        <i class="icon placeholder-icon"></i>
+        <input type="text" placeholder="Last Name" ng-model="lastname">
+      </label>
+    </div>
+    <p class="terms-note">By registering, you certify that you've read our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></p>
+    <div class="list">
+      <button class="button button-full button-assertive" ng-click="register(username, password, firstname, lastname);">Register</button>
+    </div>
+    </div>
+  </ion-content>
+</ion-view>
+<div class="bar bar-footer bar-translucent">
+  <div class="title">
+    <a href="#/login" style="text-decoration: none;">I already have an account</a>
+  </div>
+</div>
+

@@ -1,0 +1,23 @@
+<ion-view view-title="Login" hide-nav-bar="true" class="entry">
+  <ion-content class="ion-content padding">
+    <div class="logo">
+      <img src="img/logo.png">
+    </div>
+    <div class="list">
+      <label class="item item-input">
+        <i class="icon ion-ios-email-outline placeholder-icon"></i>
+        <input type="text" placeholder="Email address" ng-model="username">
+      </label>
+      <label class="item item-input">
+        <i class="icon ion-ios-locked-outline placeholder-icon"></i>
+        <input type="password" placeholder="Password" ng-model="password">
+      </label>
+      <button class="button button-full button-energized" ng-click="login(username, password);">Login</button>
+    </div>
+  </ion-content>
+</ion-view>
+<div class="bar bar-footer bar-translucent">
+  <div class="title">
+    <a href="#/register" style="text-decoration: none;">I don't have an account yet</a>
+  </div>
+</div>
