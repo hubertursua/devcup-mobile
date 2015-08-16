@@ -68,8 +68,9 @@ angular.module('starter.controllers', [])
         template: 'Searching for restaurants...'
       });
 
-      navigator.geolocation.getCurrentPosition(function (position) {
-        Locations.search(position.coords.latitude, position.coords.longitude, function (err, locations) {
+      // navigator.geolocation.getCurrentPosition(function (position) {
+        // Locations.search(position.coords.latitude, position.coords.longitude, function (err, locations) {
+        Locations.search('14.589168014', '121.0656000121', function (err, locations) {
           $scope.locations = locations;
           $ionicLoading.hide();
 
@@ -80,10 +81,10 @@ angular.module('starter.controllers', [])
             });
           }
         });
-      }, function (err) {
-          console.log('code: '    + err.code    + '\n' +
-                'message: ' + err.message + '\n');
-      });
+      // }, function (err) {
+      //     console.log('code: '    + err.code    + '\n' +
+      //           'message: ' + err.message + '\n');
+      // });
     }
   });
 })
